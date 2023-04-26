@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;700&family=Silkscreen&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./assets/clouddev.png" type="image/x-icon">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<div class="hero-header">
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-l"></i>
+                <div class="logo-text">Lucas</div>
+            </div>
+            <nav>
+                <div class="togglebtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="navlinks">
+                    <li><a href="#formacao"><span>01.</span>Formação</a></li>
+                    <li><a href="#projetos"><span>02.</span>Projetos</a></li>
+                    <li><a href="#contato"><span>03.</span>Contato</a></li>
+                    <li><a class="curriculo" href="#">Currículo</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="hero-pic">
+                <img src="./assets/Lucas.jpg" alt="">
+            </div>
+
+            <div class="hero-text">
+                <h1>Engenheiro de Software & Desenvolvedor Fullstack</h1>
+                <p>Localizado em Goiânia</p>
+
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+
+                <!-- 
+                    <div class="social">
+                    <a href="https://www.linkedin.com/in/lucassiqueirasurreco/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/LucasSiqueiraSurreco" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/lucassiqueirasr/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/5562983285424" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+-->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Typed js for typing text effect -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+<script>
+    //alert("Em Desenvolvimento")
+    // Creating button click show hide navbar
+    var togglebtn = document.querySelector(".togglebtn")
+    var nav = document.querySelector(".navlinks")
+    var links = document.querySelector(".navlinks li")
+
+    togglebtn.addEventListener("click", function () {
+        this.classList.toggle("click")
+        nav.classList.toggle("open")
+    })
+
+    let typed = new Typed(".input", {
+        strings: ["Fullstack Developer", "Software Engineer", "overpowered"],
+        typedSpeed: 70,
+        backSpeed: 55,
+        loop: true
+    })
+</script>
+</body>
+
+</html>

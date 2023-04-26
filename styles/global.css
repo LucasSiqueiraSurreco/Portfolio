@@ -1,0 +1,32 @@
+:root {
+    --bg-special: #65ffdb;
+    --bg-specialM: #65ffdbbb;
+
+    --nav: #cdd6f7;
+    --title: #abb6d4;
+    --text: #e4e9fd;
+    --textBold: #8993b0;
+
+    --ff-nav: 'Silkscreen', sans-serif;
+    --ff-text: 'Fira Sans', Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: var(--ff-text);
+}
+
+body {
+    margin: 0px;
+    font-family: var(--ff-text);
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23000621' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23000c24' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23021128' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%2306152b' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%230A192F' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    background-size: cover;
+    background-position: center center;
+}
