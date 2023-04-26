@@ -14,7 +14,6 @@
     <link rel="shortcut icon" href="./assets/clouddev.png" type="image/x-icon">
     <title>Document</title>
     <style>
-
     </style>
 </head>
 <div class="hero-header">
@@ -40,12 +39,12 @@
         </header>
         <div class="container">
             <div class="hero-pic">
-                <img src="./assets/Lucas.jpg" alt="">
+                <img class="imgMob" src="./assets/Lucas.jpg" alt="">
             </div>
 
             <div class="hero-text">
                 <h1>Engenheiro de Software & Desenvolvedor Fullstack</h1>
-                <p>Localizado em Goiânia</p>
+                <p><span class="input"></span></p>
 
                 <div class="social">
                     <a href="#"><i class="fa-brands fa-linkedin"></i></a>
@@ -74,21 +73,25 @@
 <script>
     //alert("Em Desenvolvimento")
     // Creating button click show hide navbar
-    var togglebtn = document.querySelector(".togglebtn")
-    var nav = document.querySelector(".navlinks")
-    var links = document.querySelector(".navlinks li")
+    let togglebtn = document.querySelector(".togglebtn")
+    let nav = document.querySelector(".navlinks")
+    let links = document.querySelector(".navlinks li")
+
+    let imgMob = document.querySelector("imgMob")
 
     togglebtn.addEventListener("click", function () {
         this.classList.toggle("click")
         nav.classList.toggle("open")
     })
 
+
     let typed = new Typed(".input", {
-        strings: ["Fullstack Developer", "Software Engineer", "overpowered"],
+        strings: ["Localizado em Goiânia", "Sempre atualizado", "100% focado", "Alta produtividade e eficiência "],
         typedSpeed: 70,
         backSpeed: 55,
-        loop: true
+        loop: true,
     })
+
 </script>
 </body>
 
